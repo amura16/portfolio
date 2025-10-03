@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO-RODDY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://font.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+        body{
+            background: url("bg4.png") no-repeat center center/cover;
+        }
+        .h1{
+            
+            font-weight:bolder;
+            font-family: "Changa One", sans-serif;
+            font-style: italic;
+        }
+        .photo{
+            border-bottom-right-radius: 25%;
+            border-top-right-radius: 25% ;
+            border-top-left-radius: 70%;
+            border-bottom-left-radius: 30% ;
+            width: 330px;
+            height:400px;
+            
+        }
+        .navbar,footer,.cover{
+            backdrop-filter: blur(6px);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .image{
+            width:200px;
+            height: 200px;
+            
+        }
+        footer .row{
+            height: 50px;
+        }
+        .skill:hover{
+            transform:scale(1.08);
+            transition: 0.2s ease-out;
+        }
+        .icon{
+            width: 32px;
+            height: 32px;
+        }
+        .link:hover{
+            color: aqua !important;
+        }
+
+        @media(max-width:576px){
+            .photo{
+                border-radius:50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent border-bottom">
+        <div class="container-md">
+            <a class="navbar-brand"><b>PORTFOLIO</b><a>
+            <button class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#navbarcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#home" class="nav-item nav-link">Home</a>
+                    <a href="#projects" class="nav-item nav-link">Projects</a>
+                    <a href="#skills" class="nav-item nav-link">Skills</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid py-5 cover" id="home">
+        <div class="container-md my-5">
+            <div class="row mb-5">
+                <div class="col-sm-6 d-flex align-items-center">
+                    <span class="text-white text-center text-sm-start">
+                        <h2 class="mb-5 ">Hi, <br> I'm <b>Roddy TANJAKA</b></h2>
+                        <h1 class="mt-5 mb-3 text-primary h1 col-sm-9 col-md-12">WEB DEVELOPER</h1>
+                        <p class="text-muted col-sm-9">
+                            I'm a student in computer science and I'm specificaly passionnated in web developpement. 
+                        </p>
+                    </span>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end">
+                    <div>
+                        <img src="roddy-1.png" class="photo h-sm-100" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+        </div>
+
+        <div class="container-md my-5" id="projects">
+            <div class="row mb-4">
+                <h2 class="display-4 text-center text-white fw-bold">Projects</h2>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <p class="text-primary text-md-center"><b>E-commerce Web Application</b></p>
+                    <p>
+                        <ul class="text-muted">
+                            <li>User interface developed with HTML5, CSS3 and JavaScript</li>
+                            <li>Features implemented in PHP</li>
+                            <li>Design and management of a MySQL database</li>
+                            <li>Implementation of CRUD operations for managing product display, stock management, and order processing</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <p class="text-primary text-md-center"><b>Interactive Card Game</b></p>
+                    <p>
+                        <ul class="text-muted">
+                            <li>Interface developed with HTML5 and CSS3</li>
+                            <li>JavaScript used for backend logic</li>
+                            <li>Management of DOM and event handling</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-3">
+                    <p class="text-primary text-md-center"><b>Static Showcase Website</b></p>
+                    <p>
+                        <ul class="text-muted">
+                            <li>developed with HTML5 and CSS3</li>
+                            <li>Representation of a fictional store</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-light">
+        </div>
+
+        <div class="container-md my-5" id="skills">
+            <div class="row mb-4">
+                <h2 class="display-4 text-white text-center fw-bold">Skills</h2>
+            </div>
+            <div class="row mb-5 g-2">
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="HTML5.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">HTML5</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="CSS3.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">CSS3</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="JavaScript.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">JavaScript</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="Node.js.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">Node.js</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="PHP.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">PHP</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="Python.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">Python</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="Bootstrap.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">Bootstrap</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="React.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">React</div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-3 skill">
+                    <div class="row justify-content-center mb-2"><img src="MySQL.svg" class="image" alt=""></div>
+                    <div class="row justify-content-center fs-2 text-primary fw-bold">MySQL</div>
+                </div>
+            </div>
+            <hr class="bg-light">
+        </div>
+
+        <div class="container-md my-5" id="projects">
+            <div class="row mb-4">
+                <h2 class="display-4 text-white text-center fw-bold">Contact</h2>
+            </div>
+            <div class="row">
+                <div class="input-group mb-2">
+                    <span class="input-group-text bg-transparent border-0"><img src="whatsapp (1).png" class="icon" alt=""></span>
+                    <a class="pt-2 text-decoration-none text-muted">038 99 606 50</a>
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text bg-transparent border-0"><img src="e-mail (1).png" class="icon" alt=""></span>
+                    <a class="pt-2 text-decoration-none text-muted">roddytanjaka16@gmail.com</a>
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text bg-transparent border-0"><img src="facebook.png" alt="" class="icon"></span>
+                    <a href="https://web.facebook.com/Amura.Tanjaka/" class="pt-2 text-decoration-none text-muted link">Roddy Tanjaka</a>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent border-0"><img src="linkedin.png" alt="" class="icon"></span>
+                    <a href="https://www.linkedin.com/in/tanjaka-roddy-6054462ab" class="pt-2 text-decoration-none text-muted link">tanjaka roddy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid border-top">
+            <div class="container">
+                <div class="row justify-content-center align-items-end text-white">
+                    &copy;copyright 2025
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
